@@ -50,6 +50,10 @@
 
 - Graph Databases: Focus on managing relationships between data using nodes and edges. Example: Neo4j.
 
+# How to see what are the databases in sql
+
+1. Query for to see what are the databases available: SHOW DATABASES; 
+
 # Comment
 
 1. /*  */ - use this symbols for multi comments.
@@ -69,6 +73,8 @@
 4. "Show character set;" is used to display a character set.
 
 3. The sql has various character set the character set means various language and symbols and the default character set is latin.
+
+5. Query for character set: Show character set;
 
 ## VARCHAR(5):
 
@@ -120,7 +126,7 @@
 
 1. If we create a table the primary key is used as a part, In primary key we should repeat a word again.
 
-# DDL
+# DDL(DATA DEFINED LANGUAGE)
 
 1. DDL stands for Data Definition Language in SQL. 
 
@@ -140,15 +146,15 @@
 
 - Used to modify the structure of an existing database object, like adding or dropping columns in a table.
 
-- Query for ALTER to add: ALTER TABLE members ADD department VARCHAR(10);
+- Query for ALTER to add: ALTER TABLE table name ADD department VARCHAR(10);
 
-- Query for ALTER to delete: ALTER TABLE members DROP department;
+- Query for ALTER to delete: ALTER TABLE table name DROP depertment;
 
 ## DROP
 
 - Used to delete database objects such as tables or views.
 
-- Query for DROP: DROP database kumar;
+- Query for DROP: DROP database table name;
 
 ## TRUNCATE
 
@@ -164,7 +170,7 @@
 
 5. DDL operations are usually auto-committed, meaning they take effect immediately and cannot be rolled back.
 
-# DML
+# DML(DATA MANIPULATION LANGUAGE)
 
 1. DML stands for Data Manipulation Language in SQL. 
 
@@ -178,9 +184,9 @@
 
 - It used to display the data's inside the table. 
 
-- Query for select(To display all data's and values): SELECT * FROM members;
+- Query for select(To display all data's and values): SELECT * FROM table name;
 
-- Query for select(To display particular data's and values):SELECT id,name FROM members;
+- Query for select(To display particular data's and values):SELECT id,name FROM table name;
 
 ## INSERT 
 
@@ -188,21 +194,158 @@
 
 - We cannot insert a values randomly we need to insert a values Arrangement of data's.
 
-- Query for insert single value: INSERT INTO members VALUES(1, "Aarthi", 7.5);
+- Query for insert single value: INSERT INTO table name VALUES(1, "Aarthi", 7.5);
 
-- Query for insert multiple value: INSERT INTO members VALUES(1, "Aarthi", 7.5),(2, "Krishna", 7.5);
+- Query for insert multiple value: INSERT INTO table name VALUES(1, "Aarthi", 7.5),(2, "Krishna", 7.5);
 
-- Query for insert particular data's: INSERT INTO members(id,name) VALUES(3,"surya");
-
+- Query for insert particular data's: INSERT INTO table name(id,name) VALUES(3,"surya");
 
 ## UPDATE
 
-- Modifies existing rows of data in a table.
+- Modifies the values of table data's.
+
+- Query for update: UPDATE employee
+                    SET job_desc="Analyst"; 
+
+- This Query will update everything when we set the value for the data.
+
+- So if use WHERE that will modify the value which value we assign for the data.
+
+- Query for update particular value for data: UPDATE employee
+                                              SET job_desc="Analyst"
+                                              WHERE job_desc="sales"; 
+
+- We need to see a table result by using this query SELECT * FROM table name;.                                            
 
 ## DELETE
 
 - Removes rows from a table.
 
+- Query for delete: DELETE FROM employee
+                    WHERE emp_id=3;
+
+- We need to see a table result by using this query SELECT * FROM table name;.                                           
+                    
+
 5. DML commands are not auto-committed, meaning their changes can be rolled back if not explicitly committed. They are essential for interacting with and modifying the data within a database.
+
+# DQL(DATA QUERY LANGUAGE)
+
+1. It is a component of the SQL statement that allows getting data from the database and imposing order upon it.
+
+2. It includes the SELECT statement.
+
+3. This command allows getting the data out of the database to perform operations with it.
+
+## SELECT
+
+1. Select is used to fetch data's in the table and display the data's in the table formate
+
+2. Query for select: SELECT * FROM table name;
+
+# SQL WHERE CLAUSE
+
+1. The WHERE clause is used to filter records.
+
+2. It is used to extract only those records that fulfill a specified condition.
+
+3. Query for where: select * FROM table name
+                    WHERE ename="krishna";  
+
+4. Where ename is a part of the table krishna is a value in a table.
+
+5. Where displaying the ename who has the name of krishna.
+
+6. We can use a AND, OR, NOT, IN, BETWEEN.
+
+## AND
+
+- In And function it satisfy two or more values.
+
+- Query for the AND: SELECT * FROM employee
+                     WHERE salary > 40000 AND job_desc="hr"; 
+
+## OR
+
+- In OR function it satisfy atleast one value.
+
+- Query for the OR: SELECT * FROM employee
+                    WHERE job_desc= "sales" OR job_desc="hr"; 
+
+## NOT 
+
+- In NOT function it reject the value we don't need and display others.
+
+- Query for the NOT: SELECT * FROM employee
+                     WHERE NOT job_desc= "manager"
+
+## IN
+
+- In IN function it is used for alternate of OR function and used with NOT function.
+
+- Query for the IN: SELECT * FROM employee
+                    WHERE job_desc IN("hr", "sales");
+
+- This IN function used for alternate of OR function.
+
+- Query for the NOT IN: SELECT * FROM employee
+                        WHERE job_desc NOT IN ("hr", "sales");
+
+## BETWEEN 
+
+- In BETWEEN function it is used for between A and B.
+
+- Query for BETWEEN: SELECT * FROM employee
+                     WHERE salary BETWEEN 1000 AND 90000;
+
+## LIMIT
+
+- In LIMIT function it will display the limit of the numbers.
+
+- Query for LIMIT: SELECT * FROM employee
+                   LIMIT 6;
+
+# LIKE
+
+1. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+
+2. There are two wildcards often used in conjunction with the LIKE operator percentage and underscore.
+
+3. The percent sign % represents zero, one, or multiple characters.
+ 
+4. The underscore sign _ represents one, single character
+
+## % percentage
+
+- By using % we can find a word or name which alphabet order we want
+
+- query for starting letter: SELECT * FROM employee
+                         WHERE ename LIKE 'S%';
+
+- Query for starting and ending letter: SELECT * FROM employee
+                                    WHERE ename LIKE 'S%a'; 
+
+- Query for middle letter: SELECT * FROM employee
+                           WHERE ename LIKE '%s%';  
+
+- Query for except starting and ending: SELECT * FROM employee
+                                        WHERE ename LIKE'__i%';                                                                                                       
+- - Query for % symbol as a string: SELECT * FROM employee
+                                          WHERE ename LIKE '/%';                                                                                                                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
