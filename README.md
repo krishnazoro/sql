@@ -330,8 +330,77 @@
 
 - Query for except starting and ending: SELECT * FROM employee
                                         WHERE ename LIKE'__i%';                                                                                                       
-- - Query for % symbol as a string: SELECT * FROM employee
-                                          WHERE ename LIKE '/%';                                                                                                                   
+-  Query for % symbol as a string: SELECT * FROM employee
+                                          WHERE ename LIKE '/%';                                                                                                  
+
+# DISTINCT
+
+1. The DISTINCT is display the values.
+
+2. By using this value will not repeat again.
+
+3. It is used with SELECT.
+
+4. Query for the DISTINCT: SELECT DISTINCT Table data FROM Table name;
+
+# ORDER BY
+
+1. ORDER BY used to arrange the table data in ascending and descending order.
+
+2. Even we can arrange it manually. 
+
+3. Query for ORDER BY in ascending: SELECT * FROM Table name
+                                    ORDER BY Table part;
+
+4. Query for ORDER BY in ascending: SELECT * FROM Table name
+                                    ORDER BY Table part DESC;
+
+5. Query for ORDER BY in manually: SELECT * FROM company
+                                   ORDER BY ( CASE job_desc
+                                   When "manager" THEN 1
+                                   WHEN "ceo" THEN 2
+                                   WHEN "developer" THEN 3
+                                   ELSE 100 END
+
+                                   ); 
+
+# Functions
+
+1. Functions is defined as to finish specific part of the program.
+
+2. Functions are various type method we can use but we going to use some specific task in numbers and strings.
+
+3. In numbers we can count numbers of persons in the table data, sum of salary of persons in the table data, maximum salary of the salary in the table data and minimum salary in the table data.
+
+- Query for numbers of persons in the table data: SELECT COUNT(*) Total FROM company;
+
+- Query for numbers of specific person in the table data: SELECT COUNT(*) Total_no_of_sales FROM company
+                                                          WHERE job_desc="sales";
+                        
+- Query for sum of salary: SELECT SUM(salary) Total_of_salary FROM company;
+                        
+- Query for specific person sum of salary: SELECT SUM(salary) Total_of_salary FROM company
+                                           WHERE job_desc="manager";
+
+- Query for maximum salary who get:SELECT MAX(salary) max_salary FROM company;
+
+- Query for minimum salary who get:SELECT MIN(salary) min_salary FROM company;
+
+4. In strings we can give specific case for specific data's,we can measure character length for specific data,we can rupees,euro like money name and round the salary in decimals and we can print specific numbers of characters in the table data.
+
+- Query for specific case for specific data's: SELECT UCASE(stfname) name,salary FROM company;
+
+- Query for measure character length for specific data: SELECT stfname,CHAR_LENGTH(stfname) char_count FROM company;
+
+- Query for rupees,euro like money name and round the salary in decimals: SELECT stfname,CONCAT('RS.',FORMAT(salary,0))salary FROM    company;
+
+- Query for print specific numbers of characters in the table data: SELECT stfname,LEFT(job_desc,3) job_desc FROM company;
+
+ 5. If you learn more about the functions search in "Tech on the net".  
+
+
+
+
 
 
 
