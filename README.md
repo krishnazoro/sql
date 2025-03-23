@@ -396,7 +396,7 @@
 
 - Query for print specific numbers of characters in the table data: SELECT stfname,LEFT(job_desc,3) job_desc FROM company;
 
- 5. If you learn more about the functions search in "Tech on the net".  
+ 5. If you want learn more about the functions search in "Tech on the net".  
 
 
 
