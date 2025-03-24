@@ -396,7 +396,26 @@
 
 - Query for print specific numbers of characters in the table data: SELECT stfname,LEFT(job_desc,3) job_desc FROM company;
 
- 5. If you want learn more about the functions search in "Tech on the net".  
+ 5. If you want learn more about the functions search in "Tech on the net". 
+
+ # DATE 
+
+ 1. DATE function is used to give date, time, month and year to add data in the table.
+
+ 2. We can give date for the specific person, we can give current data, time, month and year, we can formate the date, we can see difference current date to past date or current date to future date, we can see tommorow date, month, time and year.
+
+ - Querys for current time: SELECT NOW();, SELECT DATE(NOW());, SELECT CURDATE();.
+
+ - Query for date for the specific person: ALTER TABLE company ADD Hire_date DATE
+                                           UPDATE company
+                                           SET Hire_date= "2012-06-29"
+                                           WHERE job_desc= "manager";
+
+ - Query for formate the date: SELECT DATE_FORMAT(CURDATE(), "%d/%m/%y")DATE;
+
+ - Query for difference current date to past date or current date to future date: SELECT DATEDIFF(CURDATE(),"2024/04/15") DAYS;   
+
+ - Query for tommorow date, month and year: SELECT DATE_ADD(CURDATE(), INTERVAL 1 DAY) After_one_day;                                  
 
 
 
