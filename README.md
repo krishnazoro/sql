@@ -415,7 +415,39 @@
 
  - Query for difference current date to past date or current date to future date: SELECT DATEDIFF(CURDATE(),"2024/04/15") DAYS;   
 
- - Query for tommorow date, month and year: SELECT DATE_ADD(CURDATE(), INTERVAL 1 DAY) After_one_day;                                  
+ - Query for tommorow date, month and year: SELECT DATE_ADD(CURDATE(), INTERVAL 1 DAY) After_one_day;  
+
+ # ORDER BY
+
+ 1. The GROUP BY statement in SQL is used to organize data into groups based on one or more columns.
+
+ 2. It is commonly paired with aggregate functions (e.g., COUNT, SUM, AVG, MAX, MIN) to perform operations on each group of data.
+
+ - Query for average the table data: SELECT job_desc,AVG(salary) FROM company
+                                     GROUP BY job_desc;
+ 
+ - Query for count the table data: SELECT job_desc,COUNT(stf_id) FROM company
+                                   GROUP BY job_desc;
+
+# HAVING 
+
+1. The HAVING clause in SQL is used to filter groups of data after applying the GROUP BY clause. 
+
+2. Unlike the WHERE clause, which filters rows before grouping, HAVING is applied to aggregate functions (e.g., SUM, COUNT, AVG) and works with grouped data.
+
+- Query for having, group by using count: SELECT job_desc,COUNT(stf_id) FROM company
+                                          GROUP BY job_desc
+                                          HAVING COUNT(stf_id) >1; 
+
+- Query for having, group by using count after having using order by: SELECT job_desc,COUNT(stf_id) FROM company
+                                                                      GROUP BY job_desc
+                                                                      HAVING COUNT(stf_id) >1
+                                                                      ORDER BY job_desc;
+                                                                      
+                                                                       
+
+
+                                
 
 
 
