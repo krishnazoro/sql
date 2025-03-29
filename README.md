@@ -444,8 +444,24 @@
                                                                       HAVING COUNT(stf_id) >1
                                                                       ORDER BY job_desc;
                                                                       
-                                                                      
 
+
+# CONSTRAINTS
+
+1. In constraints there are some keywords like primary key the some constraints are AUTO_INCREMENT, NOT NULL, DEFAULT, UNIQUE etc..
+
+- Query for constraints - CREATE TABLE IF NOT EXISTS factory(
+                          stf_id INT PRIMARY KEY AUTO_INCREMENT,
+                          stfname VARCHAR(30) NOT NULL,
+                          job_desc VARCHAR(30) DEFAULT 'unasssigned',
+                          salary INT,
+                          pan VARCHAR(20) UNIQUE,
+                          CHECK (salary>50000)  
+                          );
+
+                          
+
+                                                                                                                         
                                                                        
 
 
