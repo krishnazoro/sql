@@ -464,19 +464,52 @@
 1. Foreign key used to connect the different tables.
 
 - Query for Foreign key - CREATE TABLE IF NOT EXISTS branch(
-  brch_id INT PRIMARY KEY AUTO_INCREMENT,
-  brchname VARCHAR(30) NOT NULL,
-  addr VARCHAR(300)); 
+                          brch_id INT PRIMARY KEY AUTO_INCREMENT,
+                          brchname VARCHAR(30) NOT NULL,
+                          addr VARCHAR(300)); 
 
 
-  CREATE TABLE IF NOT EXISTS factory(
-  stf_id INT PRIMARY KEY AUTO_INCREMENT,
-  stfname VARCHAR(30) NOT NULL,
-  job_desc VARCHAR(30),
-  salary INT,
-  brch_id INT,
-  CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
-  ); 
+                          CREATE TABLE IF NOT EXISTS factory(
+                          stf_id INT PRIMARY KEY AUTO_INCREMENT,
+                          stfname VARCHAR(30) NOT NULL,
+                          job_desc VARCHAR(30),
+                          salary INT,
+                          brch_id INT,
+                          CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
+                          ); 
+
+# INDEX
+
+1. In index methods used when the value has more than thousands because without index it's take the more time.
+
+2. Don't use index method more because it consume the space.
+
+3. We can use by primary key, foreign key and unique in the index.
+
+4. We can use descending index it make the output process method so fast.
+
+5. And then we can use finally full text index it make we can search a keywords it make the result so faster.
+
+- Query for index - CREATE TABLE  IF NOT EXISTS employee(
+                    stf_id INT PRIMARY KEY AUTO_INCREMENT,
+                    stfname VARCHAR(30) NOT NULL,
+                    job_desc VARCHAR(30),
+                    salary INT,
+                    pan VARCHAR(20) UNIQUE
+                    );
+
+                    SHOW INDEX FROM employee;
+
+                    CREATE INDEX name_index ON employee(stfname);
+
+                    ALTER TABLE employee
+                    DROP INDEX name_index;
+
+                    ALTER TABLE employee
+                    ADD INDEX (stfname);
+
+
+
 
                                                                                                                          
                                                                        
