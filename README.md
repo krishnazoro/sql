@@ -459,7 +459,24 @@
                           CHECK (salary>50000)  
                           );
 
-                          
+# FOREIGN KEY
+
+1. Foreign key used to connect the different tables.
+
+- Query for Foreign key - CREATE TABLE IF NOT EXISTS branch(
+  brch_id INT PRIMARY KEY AUTO_INCREMENT,
+  brchname VARCHAR(30) NOT NULL,
+  addr VARCHAR(300)); 
+
+
+  CREATE TABLE IF NOT EXISTS factory(
+  stf_id INT PRIMARY KEY AUTO_INCREMENT,
+  stfname VARCHAR(30) NOT NULL,
+  job_desc VARCHAR(30),
+  salary INT,
+  brch_id INT,
+  CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
+  ); 
 
                                                                                                                          
                                                                        

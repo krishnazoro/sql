@@ -61,6 +61,10 @@ UPDATE employee
 SET job_desc="Analyst"
 WHERE job_desc="sales"; 
 
+UPDATE employee
+SET job_desc="Analyst";
+
+
 SELECT * FROM employee;
 
 DELETE FROM employee
