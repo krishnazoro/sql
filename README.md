@@ -508,6 +508,190 @@
                     ALTER TABLE employee
                     ADD INDEX (stfname);
 
+# ON DELETE
+
+1. In on delete there two things one is cascade and another is set null.
+
+2. Cascade is used to delete complete data in the both table what we mention on the delete.
+
+- Query for the cascade:    CREATE TABLE IF NOT EXISTS branch(
+                            brch_id INT PRIMARY KEY AUTO_INCREMENT,
+                            brchname VARCHAR(30) NOT NULL,
+                            addr VARCHAR(300)); 
+
+                            CREATE TABLE IF NOT EXISTS factory(
+                            stf_id INT PRIMARY KEY AUTO_INCREMENT,
+                            stfname VARCHAR(30) NOT NULL,
+                            job_desc VARCHAR(30),
+                            salary INT,
+                            brch_id INT,
+                            CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
+                            ON DELETE CASCADE -- CASCADE OR SET NULL
+                            ); 
+
+                            INSERT INTO branch VALUES(1,"Chennai","16 ABC Road");
+                            INSERT INTO branch VALUES(2,"Coimbatore","120 15th Block");
+                            INSERT INTO branch VALUES(3,"Mumbai","25 XYZ Road");
+                            INSERT INTO branch VALUES(4,"Hydrabad","32 10th Street");
+
+                            INSERT INTO factory VALUES(1,'Ram','ADMIN',1000000,2);
+                            INSERT INTO factory VALUES(2,'Harini','MANAGER',2500000,2);
+                            INSERT INTO factory VALUES(3,'George','SALES',2000000,1);
+                            INSERT INTO factory VALUES(4,'Ramya','SALES',1300000,2);
+                            INSERT INTO factory VALUES(5,'Meena','HR',2000000,3);
+                            INSERT INTO factory VALUES(6,'Ashok','MANAGER',3000000,1);
+                            INSERT INTO factory VALUES(7,'Abdul','HR',2000000,1);
+                            INSERT INTO factory VALUES(8,'Ramya','ENGINEER',1000000,2);
+                            INSERT INTO factory VALUES(9,'Raghu','CEO',8000000,3);
+                            INSERT INTO factory VALUES(10,'Arvind','MANAGER',2800000,3);
+                            INSERT INTO factory VALUES(11,'Akshay','ENGINEER',1000000,1);
+                            INSERT INTO factory VALUES(12,'John','ADMIN',2200000,1);
+                            INSERT INTO factory VALUES(13,'Abinaya','ENGINEER',2100000,2);
+                            INSERT INTO factory VALUES(14,'Vidya','ADMIN',2200000,NULL);
+                            INSERT INTO factory VALUES(15,'Ranjani','ENGINEER',2100000,NULL);
+
+                            SELECT * FROM factory;
+                            SELECT * FROM branch;
+
+                            DELETE FROM branch
+                            WHERE brch_id = 2;
+
+3. After the cascade if you want to use the set null drop the full table set.
+
+4. In set null that is used to particular value in the table.
+
+- Query for the set null:   CREATE TABLE IF NOT EXISTS branch(
+                            brch_id INT PRIMARY KEY AUTO_INCREMENT,
+                            brchname VARCHAR(30) NOT NULL,
+                            addr VARCHAR(300)); 
+
+                            CREATE TABLE IF NOT EXISTS factory(
+                            stf_id INT PRIMARY KEY AUTO_INCREMENT,
+                            stfname VARCHAR(30) NOT NULL,
+                            job_desc VARCHAR(30),
+                            salary INT,
+                            brch_id INT,
+                            CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
+                            ON DELETE CASCADE -- CASCADE OR SET NULL
+                            ); 
+
+                            INSERT INTO branch VALUES(1,"Chennai","16 ABC Road");
+                            INSERT INTO branch VALUES(2,"Coimbatore","120 15th Block");
+                            INSERT INTO branch VALUES(3,"Mumbai","25 XYZ Road");
+                            INSERT INTO branch VALUES(4,"Hydrabad","32 10th Street");
+
+                            INSERT INTO factory VALUES(1,'Ram','ADMIN',1000000,2);
+                            INSERT INTO factory VALUES(2,'Harini','MANAGER',2500000,2);
+                            INSERT INTO factory VALUES(3,'George','SALES',2000000,1);
+                            INSERT INTO factory VALUES(4,'Ramya','SALES',1300000,2);
+                            INSERT INTO factory VALUES(5,'Meena','HR',2000000,3);
+                            INSERT INTO factory VALUES(6,'Ashok','MANAGER',3000000,1);
+                            INSERT INTO factory VALUES(7,'Abdul','HR',2000000,1);
+                            INSERT INTO factory VALUES(8,'Ramya','ENGINEER',1000000,2);
+                            INSERT INTO factory VALUES(9,'Raghu','CEO',8000000,3);
+                            INSERT INTO factory VALUES(10,'Arvind','MANAGER',2800000,3);
+                            INSERT INTO factory VALUES(11,'Akshay','ENGINEER',1000000,1);
+                            INSERT INTO factory VALUES(12,'John','ADMIN',2200000,1);
+                            INSERT INTO factory VALUES(13,'Abinaya','ENGINEER',2100000,2);
+                            INSERT INTO factory VALUES(14,'Vidya','ADMIN',2200000,NULL);
+                            INSERT INTO factory VALUES(15,'Ranjani','ENGINEER',2100000,NULL);
+
+                            SELECT * FROM factory;
+                            SELECT * FROM branch;
+
+                            DELETE FROM branch
+                            WHERE brch_id = 2;
+
+ # JOIN
+
+ 1. A JOIN clause is used to combine rows from two or more tables, based on a related column between them.  
+
+ 2. Here are the different types of the JOINs in SQL:
+
+ - INNER JOIN or JOIN
+
+ - LEFT JOIN
+
+ - RIGHT JOIN
+
+ - FULL JOIN
+
+ - CROSS JOIN
+
+## INNER JOIN or JOIN
+
+- INNER JOIN or JOIN returns records that have matching values in both tables.
+
+- Query for inner join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
+                        FROM factory
+                        INNER JOIN branch
+                        ON factory.brch_id = branch.brch_id
+                        ORDER BY factory.stf_id;
+
+- We can write inner join code without using inner join by WHERE.
+
+- Query for inner join without using inner join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
+                                                 FROM factory,branch
+                                                 WHERE factory.brch_id = branch.brch_id
+                                                 ORDER BY factory.stf_id;
+
+## LEFT JOIN
+
+- LEFT JOIN returns all records from the left table, and the matched records from the right table.
+
+- Query for left join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
+                       FROM factory
+                       LEFT JOIN branch
+                       ON factory.brch_id = branch.brch_id
+                       ORDER BY factory.stf_id;
+
+## RIGHT JOIN
+
+- RIGHT JOIN returns all records from the right table, and the matched records from the left table.
+
+- Query for left join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
+                       FROM factory
+                       RIGHT JOIN branch
+                       ON factory.brch_id = branch.brch_id
+                       ORDER BY factory.stf_id;
+
+## FULL JOIN
+
+- FULL JOIN returns all records when there is a match in either left or right table.
+
+- In MYSQL will not use full join
+
+## CROSS JOIN
+
+- In CROSS JOIN if there is two table is 1st table is value will join second table all value.
+
+- Query for cross join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
+                        FROM factory
+                        CROSS JOIN branch
+                        ORDER BY factory.stf_id; 
+
+# UNION
+
+1. The UNION operator is used to combine the result-set of two or more SELECT statements.
+
+- Every SELECT statement within UNION must have the same number of columns
+
+- The columns must also have similar data types
+
+- The columns in every SELECT statement must also be in the same order
+
+- Query for union without duplicate value: SELECT * FROM branch
+                                           UNION 
+                                           SELECT * FROM clients;
+
+- Query for union with duplicate values: SELECT * FROM branch
+                                         UNION ALL
+                                         SELECT * FROM clients;                                           
+
+
+
+
+
 
 
 
