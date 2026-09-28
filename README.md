@@ -1,16 +1,250 @@
-# Definintion
+# DBMS
+
+# DBMS Fundamentals
+
+## What is Data
+
+1. Data means information.
+   Data = information
+
+2. Example 1: Krishna, 23, ECE, 8.03.
+
+3. Roll_No Name Age Department CGPA
+   101 Krish 23 ECE 8.03
+
+Now the data becomes meaningful and organized.
+
+## What is a database
+
+1. Database is an organized collection of data.
+
+2. For example, a college may store:
+    Student details
+    Teacher details
+    Course details
+    Marks
+    Attendance
+    Fees
+All of these can be stored in a database.
+
+## What is a database
+
+1. Database is an organized collection of data.
+
+2. For example, a college may store:
+    Student details
+    Teacher details
+    Course details
+    Marks
+    Attendance
+    Fees
+All of these can be stored in a database.
+
+## What is DBMS?
+
+1. Database management system(DBMS) is software used to create, store, manage, retrieve and manipulate data in a database.
+
+2. It acting as a interface between database and users.
+
+2. Example
+    You
+     ↓
+    MySQL
+     ↓
+Student Database
+
+3. Command line
+    ```
+    SELECT * FROM students;
+    ```
+## Why do we need DBMS
+
+1. Imagine a college has 50,000 students. Without a proper database
+
+- Excel files
+- Paper files
+- Different folders
+- Duplicate data
+- Difficult searching
+- Data inconsistency
+
+2. With DBMS we can easily
+We can easily:
+
+- Store data
+- Search data
+- Update data
+- Delete data
+- Control access
+- Avoid unnecessary duplication
+- Maintain relationships between data
+
+### Example of DBMS
+
+- MySQL
+- PostgreSQL
+- MangoDB
+
+## What is RDBMS
+
+1. Relational database management system(RDBMS) the important word is "Relational".
+
+2. In an RDBMS, data is mainly organized into tables, and tables can be related to each other.
+
+3. Example: Student table, Department table
+
+        student_id	name	dept_id
+            1	    Arun	  10
+            2	    Krish	  20
+            3	    Ravi	  10
+
+
+            dept_id	  department
+                10	      ECE
+                20	      CSE
+
+4. Student.dept_id
+        ↓
+   Department.dept_id
+
+5. The two tables are related using the department ID. That's why it's called Relational.
+
+6. RDBMS tools are " MySQL, PostgreSQL, Oracle database ".
+
+## Basic Database terminology
+
+1. We need to understand 
+
+- Database
+- Table
+- Row
+- Column
+- Field
+- Record
+- Primary Key
+- Foreign Key
+
+2. Example: Student table
+        id	 name	age	 department
+        101	 Arun	23	 ECE
+        102	 Ravi	24	 CSE
+        103	 Priya	22	 IT
+
+3. In this example that is a "database" the database in "table form" and the table contain the "Row, Column and field".
+
+### Database
+
+1. A collection of related tables/data.
+
+          College Database
+                 ↓
+           ┌─────┼─────┐
+           ↓     ↓     ↓
+        Student Course Marks
+
+### Table
+
+1. A table stores data in rows and columns.
+
+2. Example: Student
+
+        id	 name	age
+        101	 Arun	23
+        102	 Ravi	24
+
+### Row
+
+1. A row represents one complete record.
+
+2. Example:
+
+        101 | Arun | 23 | ECE
+
+3. This is one student's record.
+
+4. So: Row = Record
+
+### Column
+
+1. A column represents a particular type/attribute of data.
+
+2. Example:
+
+    id
+    name
+    age
+    department
+
+3. So: Column = Attribute
+
+### Field
+
+1. A field is a single data value within a record.
+
+2. Example:
+
+   101 | Krish | 23 | ECE
+
+3. Each and every data is field.
+
+## Types of DBMS
+
+1. There are three types of DBMS
+
+- Relational Database
+- Object-relational
+- No SQL
+
+### Relational Database
+
+1. Relational database stores data mainly in tables.
+
+2. Example:
+Student
+    Student_ID	 Name
+      101	     Arun
+      102	     Ravi
+
+Course
+     Course_ID	 Course_Name
+        C01	       Java
+        C02	        SQL
+
+Tables can have relationships with each other.
+
+3. Examples of relational databases:
+
+- MySQL
+- PostgreSQL
+- Oracle Database
+- Microsoft SQL Server
+
+4. Main idea
+
+    Relational DB
+         ↓
+       Tables
+         ↓
+    Rows + Columns
+
+
+# SQL 
+
+## Definintion of SQL
 
 1. SQL stands for Structured Query Language.
 
 2. SQL is a standard language for accessing and manipulating databases.
 
-# What is SQL?
+3. SQL is a "Relational database".
+
+## What is SQL?
 
 1. SQL lets you access and manipulate databases
 
-2. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the    International Organization for Standardization (ISO) in 1987.
+2. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the  International Organization for Standardization (ISO) in 1987.
 
-# What SQL can do?
+## What SQL can do?
 
 1. SQL can execute queries against a database.
 
@@ -32,17 +266,28 @@
 
 10. SQL can set permissions on tables, procedures, and views.
 
-# Types of databases
+## How to create a SQL program
+
+1. First of all create a database  and write a command for use the database.
+
+2. And create a table and write what are the column you need.
+
+3. And use the insert command to inser the value.
+
+4. And use the Select command to display the Table(Result).
+
+
+## Types of databases
 
 1. We can store databases in various methods.They are
-
+ 
 - Relational database: In this database we store in the table.The example databases are MySQL, Oracle, PostgreSQL and SQL server.
 
 - NoSQL database: They are not purely SQL database they unstructred or semi structred database are schema less.The examples are MangoDB, Cassandra, etc..
 
 - Object-Relational Databases: A hybrid of relational databases and object-oriented programming. They allow storage of objects and inheritance. Example: PostgreSQL (supports this).
 
-- Distributed Databases: The data is distributed across multiple locations and is managed through a centralized or decentralized system. Example: Google Spanner.
+- Distributed Databases: The d  ata is distributed across multiple locations and is managed through a centralized or decentralized system. Example: Google Spanner.
 
 - In-Memory Databases: Store data in a system's memory (RAM) rather than on disk for faster processing. Example: Redis.
 
@@ -50,21 +295,21 @@
 
 - Graph Databases: Focus on managing relationships between data using nodes and edges. Example: Neo4j.
 
-# How to see what are the databases in sql
+## How to see what are the databases in sql
 
 1. Query for to see what are the databases available: SHOW DATABASES; 
 
-# Comment
+### Comment
 
 1. /*  */ - use this symbols for multi comments.
 
 2. --  - Use this symbols for Single comments.
 
-# Datatypes
+### Datatypes
 
 1. Use capital letters for the keywords but it is not mandatory but use like that.The example of keywords are character, etc..
 
-## CHAR(3): 
+#### CHAR(3): 
 
 1. We must 3 characters like "ARM" if you didn't three character the empty spaces are occupied by spaces like "A  ". 
 
@@ -76,7 +321,7 @@
 
 5. Query for character set: Show character set;
 
-## VARCHAR(5):
+#### VARCHAR(5):
 
 1. we can give Maximum 5 character but it's not mandatory even we 1 character the remaining space should not occupied by a spaces.
 
@@ -86,7 +331,7 @@
 
 5. We can use different character set language by use UTF 8.
 
-## NUMERICAL
+#### NUMERICAL
 
 1. If we want to store the numeric we can use int and we store the decimel we want to use decimal(5,2) it store like 999,99.
 
@@ -110,21 +355,50 @@
 
 - Time - HHH-MI-SS
 
-# DBMS(MySQL is a company name)
+## PRIMARY KEY 
 
-1. SQL can't directly handle the database so we use DBMS.
+1. A column that uniquely identifies each row in a table.
 
-2. It is interface between database and end user.
+2. Example
+            student_id       name      age
+            -----------     -------    ---
+                101           Arun      22
+                102           Krish     23
+                103           Ravi      21
 
-3. By using DBMS we can store, retrieve, define and manage data in database.
+3. Here "student_id" is the primary key.
 
-4. By using DBMS we can handle crud operation(create, read, update, delete).
+4. Every student has a different ID.
 
-5. By using DBMS take care of authentiction, concurrency, logging, backup, optimization etc...
+### Primary Key rules
 
-# PRIMARY KEY 
+1. Cannot contain duplicate values.
 
-1. If we create a table the primary key is used as a part, In primary key we should repeat a word again.
+2. Cannot contain NULL.
+
+3. Usually uniquely identifies a record.
+
+## Foreign key
+
+### Definition of foreign key
+
+1. Foreign Key is a column used to create a relationship between two tables.
+
+2. Example: student table, Course table
+
+student_id    name
+-----------   ------
+101           Arun
+102           Krish
+103           Ravi
+
+course_id     student_id    course
+---------     ----------    ------
+1             101           Java
+2             102           SQL
+3             103           Python
+
+3. student.student_id is the primary key and course.student_id is the foreign key. 
 
 # DDL(DATA DEFINED LANGUAGE)
 
@@ -687,7 +961,7 @@
 - Query for union with duplicate values: SELECT * FROM branch
                                          UNION ALL
                                          SELECT * FROM clients;                                           
-
+ 
 
 
 
