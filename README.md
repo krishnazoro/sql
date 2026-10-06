@@ -19,26 +19,26 @@ Now the data becomes meaningful and organized.
 1. Database is an organized collection of data.
 
 2. For example, a college may store:
-    Student details
-    Teacher details
-    Course details
-    Marks
-    Attendance
-    Fees
-All of these can be stored in a database.
+   Student details
+   Teacher details
+   Course details
+   Marks
+   Attendance
+   Fees
+   All of these can be stored in a database.
 
 ## What is a database
 
 1. Database is an organized collection of data.
 
 2. For example, a college may store:
-    Student details
-    Teacher details
-    Course details
-    Marks
-    Attendance
-    Fees
-All of these can be stored in a database.
+   Student details
+   Teacher details
+   Course details
+   Marks
+   Attendance
+   Fees
+   All of these can be stored in a database.
 
 ## What is DBMS?
 
@@ -46,17 +46,18 @@ All of these can be stored in a database.
 
 2. It acting as a interface between database and users.
 
-2. Example
-    You
-     ↓
-    MySQL
-     ↓
-Student Database
+3. Example
+   You
+   ↓
+   MySQL
+   ↓
+   Student Database
 
-3. Command line
-    ```
-    SELECT * FROM students;
-    ```
+4. Command line
+   ```
+   SELECT * FROM students;
+   ```
+
 ## Why do we need DBMS
 
 1. Imagine a college has 50,000 students. Without a proper database
@@ -69,7 +70,7 @@ Student Database
 - Data inconsistency
 
 2. With DBMS we can easily
-We can easily:
+   We can easily:
 
 - Store data
 - Search data
@@ -87,11 +88,11 @@ We can easily:
 
 ## What is RDBMS
 
-1. Relational database management system(RDBMS) the important word is "Relational".
+1.  Relational database management system(RDBMS) the important word is "Relational".
 
-2. In an RDBMS, data is mainly organized into tables, and tables can be related to each other.
+2.  In an RDBMS, data is mainly organized into tables, and tables can be related to each other.
 
-3. Example: Student table, Department table
+3.  Example: Student table, Department table
 
         student_id	name	dept_id
             1	    Arun	  10
@@ -103,17 +104,17 @@ We can easily:
                 10	      ECE
                 20	      CSE
 
-4. Student.dept_id
-        ↓
-   Department.dept_id
+4.  Student.dept_id
+    ↓
+    Department.dept_id
 
-5. The two tables are related using the department ID. That's why it's called Relational.
+5.  The two tables are related using the department ID. That's why it's called Relational.
 
-6. RDBMS tools are " MySQL, PostgreSQL, Oracle database ".
+6.  RDBMS tools are " MySQL, PostgreSQL, Oracle database ".
 
 ## Basic Database terminology
 
-1. We need to understand 
+1. We need to understand
 
 - Database
 - Table
@@ -125,16 +126,16 @@ We can easily:
 - Foreign Key
 
 2. Example: Student table
-        id	 name	age	 department
-        101	 Arun	23	 ECE
-        102	 Ravi	24	 CSE
-        103	 Priya	22	 IT
+   id name age department
+   101 Arun 23 ECE
+   102 Ravi 24 CSE
+   103 Priya 22 IT
 
 3. In this example that is a "database" the database in "table form" and the table contain the "Row, Column and field".
 
 ### Database
 
-1. A collection of related tables/data.
+1.  A collection of related tables/data.
 
           College Database
                  ↓
@@ -144,9 +145,9 @@ We can easily:
 
 ### Table
 
-1. A table stores data in rows and columns.
+1.  A table stores data in rows and columns.
 
-2. Example: Student
+2.  Example: Student
 
         id	 name	age
         101	 Arun	23
@@ -154,15 +155,15 @@ We can easily:
 
 ### Row
 
-1. A row represents one complete record.
+1.  A row represents one complete record.
 
-2. Example:
+2.  Example:
 
         101 | Arun | 23 | ECE
 
-3. This is one student's record.
+3.  This is one student's record.
 
-4. So: Row = Record
+4.  So: Row = Record
 
 ### Column
 
@@ -170,10 +171,10 @@ We can easily:
 
 2. Example:
 
-    id
-    name
-    age
-    department
+   id
+   name
+   age
+   department
 
 3. So: Column = Attribute
 
@@ -200,15 +201,15 @@ We can easily:
 1. Relational database stores data mainly in tables.
 
 2. Example:
-Student
-    Student_ID	 Name
-      101	     Arun
-      102	     Ravi
+   Student
+   Student_ID Name
+   101 Arun
+   102 Ravi
 
 Course
-     Course_ID	 Course_Name
-        C01	       Java
-        C02	        SQL
+Course_ID Course_Name
+C01 Java
+C02 SQL
 
 Tables can have relationships with each other.
 
@@ -221,14 +222,13 @@ Tables can have relationships with each other.
 
 4. Main idea
 
-    Relational DB
-         ↓
-       Tables
-         ↓
-    Rows + Columns
+   Relational DB
+   ↓
+   Tables
+   ↓
+   Rows + Columns
 
-
-# SQL 
+# SQL
 
 ## Definintion of SQL
 
@@ -242,7 +242,7 @@ Tables can have relationships with each other.
 
 1. SQL lets you access and manipulate databases
 
-2. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the  International Organization for Standardization (ISO) in 1987.
+2. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987.
 
 ## What SQL can do?
 
@@ -268,7 +268,7 @@ Tables can have relationships with each other.
 
 ## How to create a SQL program
 
-1. First of all create a database  and write a command for use the database.
+1. First of all create a database and write a command for use the database.
 
 2. And create a table and write what are the column you need.
 
@@ -276,18 +276,17 @@ Tables can have relationships with each other.
 
 4. And use the Select command to display the Table(Result).
 
-
 ## Types of databases
 
 1. We can store databases in various methods.They are
- 
+
 - Relational database: In this database we store in the table.The example databases are MySQL, Oracle, PostgreSQL and SQL server.
 
 - NoSQL database: They are not purely SQL database they unstructred or semi structred database are schema less.The examples are MangoDB, Cassandra, etc..
 
 - Object-Relational Databases: A hybrid of relational databases and object-oriented programming. They allow storage of objects and inheritance. Example: PostgreSQL (supports this).
 
-- Distributed Databases: The d  ata is distributed across multiple locations and is managed through a centralized or decentralized system. Example: Google Spanner.
+- Distributed Databases: The d ata is distributed across multiple locations and is managed through a centralized or decentralized system. Example: Google Spanner.
 
 - In-Memory Databases: Store data in a system's memory (RAM) rather than on disk for faster processing. Example: Redis.
 
@@ -297,39 +296,41 @@ Tables can have relationships with each other.
 
 ## How to see what are the databases in sql
 
-1. Query for to see what are the databases available: SHOW DATABASES; 
+1. Query for to see what are the databases available: SHOW DATABASES;
 
 ### Comment
 
-1. /*  */ - use this symbols for multi comments.
+1. /\* \*/ - use this symbols for multi comments.
 
-2. --  - Use this symbols for Single comments.
+2. -- - Use this symbols for Single comments.
 
 ### Datatypes
 
 1. Use capital letters for the keywords but it is not mandatory but use like that.The example of keywords are character, etc..
 
-#### CHAR(3): 
+#### String/character data type
 
-1. We must 3 characters like "ARM" if you didn't three character the empty spaces are occupied by spaces like "A  ". 
+- CHAR(3):
+
+1. We must 3 characters like "ARM" if you didn't three character the empty spaces are occupied by spaces like "A ".
 
 2. In CHAR we can store maximum 255 bytes.
 
-4. "Show character set;" is used to display a character set.
+3. "Show character set;" is used to display a character set.
 
-3. The sql has various character set the character set means various language and symbols and the default character set is latin.
+4. The sql has various character set the character set means various language and symbols and the default character set is latin.
 
-5. Query for character set: Show character set;
+5. Query for character set: **Show character set;**
 
-#### VARCHAR(5):
+- VARCHAR(5):
 
-1. we can give Maximum 5 character but it's not mandatory even we 1 character the remaining space should not occupied by a spaces.
+1. we can give Maximum 5 character but it's not mandatory even the 1 character is remaining space should not occupied by a spaces.
 
-2. In VARCHAR we can store maximum 65535 bytes and we need more we can use TEXT and blob.
+2. In VARCHAR we can store maximum 65535 bytes and "we need more we can use TEXT and blob".
 
-4. "Show character set;" is used to display a character set.
+3. **Show character set;** is used to display a character set.
 
-5. We can use different character set language by use UTF 8.
+4. We can use different character set language by use UTF 8.
 
 #### NUMERICAL
 
@@ -355,16 +356,22 @@ Tables can have relationships with each other.
 
 - Time - HHH-MI-SS
 
-## PRIMARY KEY 
+#### INT
+
+1. The integer is real numbers.
+
+## PRIMARY KEY
 
 1. A column that uniquely identifies each row in a table.
 
 2. Example
-            student_id       name      age
-            -----------     -------    ---
-                101           Arun      22
-                102           Krish     23
-                103           Ravi      21
+   student_id name age
+
+   ***
+
+   101 Arun 22
+   102 Krish 23
+   103 Ravi 21
 
 3. Here "student_id" is the primary key.
 
@@ -386,53 +393,168 @@ Tables can have relationships with each other.
 
 2. Example: student table, Course table
 
-student_id    name
------------   ------
-101           Arun
-102           Krish
-103           Ravi
+student_id name
 
-course_id     student_id    course
----------     ----------    ------
-1             101           Java
-2             102           SQL
-3             103           Python
+---
 
-3. student.student_id is the primary key and course.student_id is the foreign key. 
+101 Arun
+102 Krish
+103 Ravi
 
-# DDL(DATA DEFINED LANGUAGE)
+course_id student_id course
 
-1. DDL stands for Data Definition Language in SQL. 
+---
 
-2. It is a subset of SQL commands used to define and manage the structure of a database. 
+1 101 Java
+2 102 SQL
+3 103 Python
+
+3. student.student_id is the primary key and course.student_id is the foreign key.
+
+## DDL(DATA DEFINED LANGUAGE)
+
+1. DDL stands for Data Definition Language in SQL.
+
+2. It is a subset of SQL commands used to define and manage the structure of a database.
 
 3. These commands affect the database schema and are primarily used for creating, altering, and deleting database objects like tables, indexes, and views.
 
 4. Some commonly used DDL commands include:
 
-## CREATE
+### CREATE
 
 - Used to create new database objects such as tables, indexes, or views.
 
-- Query for CREATE: CREATE database kumar;
+- Query for CREATE database: CREATE database kumar; // kumar is a databse
 
-## ALTER
+- Query for CREATE table: CREATE table student; // student is a table
+
+### ALTER
 
 - Used to modify the structure of an existing database object, like adding or dropping columns in a table.
 
-- Query for ALTER to add: ALTER TABLE table name ADD department VARCHAR(10);
+- ADD:
 
-- Query for ALTER to delete: ALTER TABLE table name DROP depertment;
+1. To add column in the table.
 
-## DROP
+2. Syntax
 
-- Used to delete database objects such as tables or views.
+```
+ALTER TABLE STUDENT
+ADD department VARCHAR(50);
+```
 
-- Query for DROP: DROP database table name;
+3. For multiple add
 
-## TRUNCATE
+```
+ALTER TABLE STUDENT
+ADD (
+  PHONE VARCHAR(15),
+  CITY VARCHAR(30)
+);
+```
 
-- Used to delete all rows in a table while preserving its structure.
+ADD → add something
+
+- Query for ALTER to delete: ALTER TABLE table_name DROP depertment;
+
+  ```
+  ALTER TABLE STUDENT
+  Drop department VARCHAR(50);
+  ```
+
+  DROP → remove a column
+
+- Query for ALTER to modify: ALTER TABLE table_name modify name;
+
+  ```
+  table
+  name varchar(30)
+
+  ALTER TABLE STUDENT
+  modify name VARCHAR(50);
+  ```
+
+  MODIFY → change datatype/definition
+
+- Query for ALTER to Rename(Table): ALTER TABLE Column name to student_name;
+
+  ```
+   ALTER TABLE STUDENT               // (Rename for column)
+  Rename Column name to student_name;
+  ```
+
+  ```
+  create table student;
+
+  ALTER TABLE STUDENT  // (Rename for table)
+  Rename to school;
+  ```
+
+  RENAME → change name
+
+- Query for ALTER to DROP(Table): ALTER TABLE to student_name;
+
+```
+create table name;
+
+ALTER TABLE STUDENT
+DROP COLUMN AGE;
+```
+
+DROP COLUMN → Delete a column
+
+- Query for only read: alter database read only = 1;
+
+```
+ alter database read only = 1;
+```
+
+This use for only read we cannot change that anything.
+
+- Query for read and write: alter database read only = 0;
+  ```
+   alter database read only = 0;
+  ```
+  This is use for read and write that means i can change anything in sql.
+
+### DROP
+
+1. Used to delete database objects such as tables or views.
+
+2. Query for DROP a table:
+
+```
+DROP database table_name;
+```
+
+3. Query for DROP a database:
+
+```
+DROP database database_name;
+```
+
+### TRUNCATE
+
+1. Used to delete all rows in a table while preserving its structure.
+
+2. syntax
+
+```
+TRUNCATE TABLE table_name;
+```
+
+3. After a truncate is there any need we can use "Insert" again.
+
+### Rename
+
+1. This rename is only for change the table name.
+
+2. syntax
+
+```
+RENAME TABLE STUDENT TO SCHOOL;
+```
 
 ## DATABASE IF EXISTS
 
@@ -444,9 +566,9 @@ course_id     student_id    course
 
 5. DDL operations are usually auto-committed, meaning they take effect immediately and cannot be rolled back.
 
-# DML(DATA MANIPULATION LANGUAGE)
+## DML(DATA MANIPULATION LANGUAGE)
 
-1. DML stands for Data Manipulation Language in SQL. 
+1. DML stands for Data Manipulation Language in SQL.
 
 2. It is a subset of SQL commands used to manipulate and manage data stored in database tables.
 
@@ -454,56 +576,66 @@ course_id     student_id    course
 
 4. Commonly used DML commands include:
 
-## SELECT
-
-- It used to display the data's inside the table. 
-
-- Query for select(To display all data's and values): SELECT * FROM table name;
-
-- Query for select(To display particular data's and values):SELECT id,name FROM table name;
-
-## INSERT 
+### INSERT
 
 - It is used to insert a values for the table data's.
 
 - We cannot insert a values randomly we need to insert a values Arrangement of data's.
 
-- Query for insert single value: INSERT INTO table name VALUES(1, "Aarthi", 7.5);
+- Query for insert single value: INSERT INTO table_name VALUES(1, "Aarthi", 7.5);
 
-- Query for insert multiple value: INSERT INTO table name VALUES(1, "Aarthi", 7.5),(2, "Krishna", 7.5);
-
+- Query for insert multiple value:
+  ```
+  INSERT INTO table_name
+  VALUES(1, "Aarthi", 7.5),
+  (2, "Krishna", 7.5);
+  ```
 - Query for insert particular data's: INSERT INTO table name(id,name) VALUES(3,"surya");
 
-## UPDATE
+### UPDATE
 
 - Modifies the values of table data's.
 
-- Query for update: UPDATE employee
-                    SET job_desc="Analyst"; 
-
+- Query for update:
+  ```
+  UPDATE employee
+  SET job_desc="Analyst";
+  ```
 - This Query will update everything when we set the value for the data.
 
-- So if use WHERE that will modify the value which value we assign for the data.
+- So if use WHERE that will modify the value which value we assign for the data.  
+   // Where - destination
 
-- Query for update particular value for data: UPDATE employee
-                                              SET job_desc="Analyst"
-                                              WHERE job_desc="sales"; 
+- Query for update particular value for data: UPDATE employee.
+  ```
+  UPDATE STUDENT
+  SET AGE = 24
+  WHERE STUDENT_ID = 101;
+  ```
+- We need to see a table result by using this query SELECT \* FROM table name;.
 
-- We need to see a table result by using this query SELECT * FROM table name;.                                            
+- Query for Multiple columns:
+  ```
+  UPDATE STUDENT
+  SET AGE = 25,
+  NAME = 'KRISH KUMAR'
+  WHERE STUDENT_ID = 101;
+  ```
 
-## DELETE
+### DELETE
 
 - Removes rows from a table.
 
-- Query for delete: DELETE FROM employee
-                    WHERE emp_id=3;
-
-- We need to see a table result by using this query SELECT * FROM table name;.                                           
-                    
+- Query for delete:
+  ```
+  DELETE FROM employee
+  WHERE emp_id=3;    // Where - destination
+  ```
+- We need to see a table result by using this query SELECT \* FROM table name;.
 
 5. DML commands are not auto-committed, meaning their changes can be rolled back if not explicitly committed. They are essential for interacting with and modifying the data within a database.
 
-# DQL(DATA QUERY LANGUAGE)
+## DQL(DATA QUERY LANGUAGE)
 
 1. It is a component of the SQL statement that allows getting data from the database and imposing order upon it.
 
@@ -511,132 +643,802 @@ course_id     student_id    course
 
 3. This command allows getting the data out of the database to perform operations with it.
 
-## SELECT
+### SELECT
 
-1. Select is used to fetch data's in the table and display the data's in the table formate
+- It used to display the data's inside the table.
 
-2. Query for select: SELECT * FROM table name;
+- Query for select(To display all data's and values):
 
-# SQL WHERE CLAUSE
+  ```
+  SELECT * FROM table name; // * - means all
+  ```
+
+- Query for select(To display particular data's and values):
+  ```
+  SELECT id, name FROM table name;
+  ```
+
+### SQL WHERE CLAUSE
 
 1. The WHERE clause is used to filter records.
 
 2. It is used to extract only those records that fulfill a specified condition.
 
-3. Query for where: select * FROM table name
-                    WHERE ename="krishna";  
-
+3. Query for where:
+   ```
+   select * FROM table_name
+   WHERE ename="krishna";
+   ```
 4. Where ename is a part of the table krishna is a value in a table.
 
 5. Where displaying the ename who has the name of krishna.
 
-6. We can use a AND, OR, NOT, IN, BETWEEN.
+6. We can use a AND, OR, NOT, IN, BETWEEN, LIKE, IS NULL DISTINCT, ORDER BY, LIMIT.
 
-## AND
+#### AND
 
 - In And function it satisfy two or more values.
 
-- Query for the AND: SELECT * FROM employee
-                     WHERE salary > 40000 AND job_desc="hr"; 
+- Query for the AND:
+  ```
+  SELECT * FROM employee
+  WHERE salary > 40000 AND job_desc="hr";
+  ```
+  ```
+  SELECT * FROM UNIVERSITY  -- AND [BOTH CONDITION NEED TO BE TRUE]
+  WHERE AGE = 24
+  AND STUDENT_ID = 103;
+  ```
 
-## OR
+#### OR
 
 - In OR function it satisfy atleast one value.
 
-- Query for the OR: SELECT * FROM employee
-                    WHERE job_desc= "sales" OR job_desc="hr"; 
+- Query for the OR:
+  ```
+  SELECT * FROM employee
+  WHERE job_desc= "sales" OR job_desc="hr";
+  ```
+  ```
+  SELECT * FROM UNIVERSITY  -- OR [ATLEAST ONE CONDITION TRUE]
+  WHERE AGE = 24
+  OR STUDENT_ID = 104;
+  ```
 
-## NOT 
+#### NOT
 
 - In NOT function it reject the value we don't need and display others.
 
-- Query for the NOT: SELECT * FROM employee
-                     WHERE NOT job_desc= "manager"
+- Query for the NOT:
+  ```
+  SELECT * FROM employee
+  WHERE NOT job_desc= "manager"
+  ```
+  ```
+  SELECT * FROM UNIVERSITY  -- NOT [USE TO REVERSE CONDITION TO TRUE]
+  WHERE NOT AGE = 27;
+  ```
 
-## IN
+#### DISTINCT
 
-- In IN function it is used for alternate of OR function and used with NOT function.
+1. Distinct remove duplicate and display the result.
 
-- Query for the IN: SELECT * FROM employee
-                    WHERE job_desc IN("hr", "sales");
+2. Syntax
+   ```
+   SELECT distinct NAME, AGE FROM UNIVERSITY; -- DISTINCT [rEMOVE DUPLICATE]
+   ```
 
-- This IN function used for alternate of OR function.
+#### ORDER BY
 
-- Query for the NOT IN: SELECT * FROM employee
-                        WHERE job_desc NOT IN ("hr", "sales");
+1. It is used to arrange the values in ascending or descending order.
 
-## BETWEEN 
+2. Syntax
 
-- In BETWEEN function it is used for between A and B.
+```
+SELECT * FROM UNIVERSITY
+ORDER BY AGE ASC;
+```
 
-- Query for BETWEEN: SELECT * FROM employee
-                     WHERE salary BETWEEN 1000 AND 90000;
+SELECT \* FROM UNIVERSITY
+ORDER BY AGE DESC;
 
-## LIMIT
+```
 
-- In LIMIT function it will display the limit of the numbers.
+#### LIMIT
 
-- Query for LIMIT: SELECT * FROM employee
-                   LIMIT 6;
+1. Used to restrict the number of rows returned.
 
-# LIKE
+2. Syntax
+```
 
-1. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+SELECT \* FROM UNIVERSITY -- LIMIT [IT WILL PRINT ONLY 2 LINES]
+LIMIT 2;
+
+```
+SELECT * FROM UNIVERSITY  -- LIMIT [IT WILL PRINT ONLY 3 LINES]
+ORDER BY AGE DESC
+LIMIT 3;
+```
+
+#### IN
+
+1. In IN function it is used for alternate of OR function and used with NOT function.
+
+2. when we use the IN function means multiple of OR function needed.
+
+3. Query for the IN:
+
+```
+SELECT \* FROM employee
+WHERE job_desc IN("hr","manager","sales");
+```
+
+4. This IN function used for alternate of OR function.
+
+5. Query for the NOT IN:
+
+```
+SELECT \* FROM employee
+WHERE job_desc NOT IN ("hr", "sales");
+```
+
+#### BETWEEN
+
+1. BETWEEN is used to check whether a value is within a range.
+
+2. Query for BETWEEN:
+
+```
+SELECT \* FROM employee
+WHERE salary BETWEEN 1000 AND 90000;
+```
+
+#### LIKE
+
+1. LIKE is used to search for a pattern in text/string values.
 
 2. There are two wildcards often used in conjunction with the LIKE operator percentage and underscore.
 
 3. The percent sign % represents zero, one, or multiple characters.
- 
-4. The underscore sign _ represents one, single character
 
-## % percentage
+4. The underscore sign \_ represents one, single character.
 
-- By using % we can find a word or name which alphabet order we want
+#### % WILDCARE
 
-- query for starting letter: SELECT * FROM employee
-                         WHERE ename LIKE 'S%';
+1. The percent sign % represents zero, one, or multiple characters.
 
-- Query for starting and ending letter: SELECT * FROM employee
-                                    WHERE ename LIKE 'S%a'; 
+2. We can use with in start form, end form and what contains
 
-- Query for middle letter: SELECT * FROM employee
-                           WHERE ename LIKE '%s%';  
+3. Example
 
-- Query for except starting and ending: SELECT * FROM employee
-                                        WHERE ename LIKE'__i%';                                                                                                       
--  Query for % symbol as a string: SELECT * FROM employee
-                                          WHERE ename LIKE '/%';                                                                                                  
+   ```
+   SELECT * FROM STUDENT  -- LIKE START WITH K
+   WHERE NAME LIKE 'K%';
 
-# DISTINCT
+   SELECT * FROM UNIVERSITY  --  LIKE ENDT WITH A
+   WHERE NAME LIKE '%A';
 
-1. The DISTINCT is display the values.
+   SELECT * FROM UNIVERSITY  --  LIKE CONTAIN WITH U
+   WHERE NAME LIKE '%U%';
+   ```
 
-2. By using this value will not repeat again.
+#### _ WILDCARD
 
-3. It is used with SELECT.
+1. The underscore sign _ represents one, single character.
 
-4. Query for the DISTINCT: SELECT DISTINCT Table data FROM Table name;
+2. We can use with in start form, end form.
 
-# ORDER BY
+3. Example
 
-1. ORDER BY used to arrange the table data in ascending and descending order.
+   ```
+   SELECT * FROM UNIVERSITY   -- LIKE _ WILDCARD , 4 UNDERSCORE START
+   WHERE NAME LIKE 'K____';
 
-2. Even we can arrange it manually. 
+   SELECT * FROM UNIVERSITY   -- LIKE _ WILDCARD , 4 UNDERSCORE END
+   WHERE NAME LIKE '____R';
+   ```
 
-3. Query for ORDER BY in ascending: SELECT * FROM Table name
-                                    ORDER BY Table part;
+### IS NULL
 
-4. Query for ORDER BY in ascending: SELECT * FROM Table name
-                                    ORDER BY Table part DESC;
+1. NULL means no value / unknown value.
 
-5. Query for ORDER BY in manually: SELECT * FROM company
-                                   ORDER BY ( CASE job_desc
-                                   When "manager" THEN 1
-                                   WHEN "ceo" THEN 2
-                                   WHEN "developer" THEN 3
-                                   ELSE 100 END
+2. Example
+   ```
+   SELECT * FROM STUDENT
+   WHERE PHONE IS NULL;
+   ```
+3. | STUDENT_ID | NAME  | PHONE      |
+   | ---------- | ----- | ---------- |
+   | 101        | KRISH | 9876543210 |
+   | 102        | ARUN  | NULL       |
+   | 103        | KUMAR | 9123456780 |
 
-                                   ); 
+### IS NOT NULL
+
+1. Not null means a table should cantain values there should null in the table or what we need
+
+2. Example
+   ```
+   SELECT * FROM STUDENT
+   WHERE PHONE IS NULL;
+   ```
+3. | STUDENT_ID | NAME  | PHONE      |
+   | ---------- | ----- | ---------- |
+   | 101        | KRISH | 9876543210 |
+   | 102        | ARUN  | 638319790  |
+   | 103        | KUMAR | 9123456780 |
+
+### AGGREGATE FUNCTION
+
+1. An aggregate function performs a calculation on multiple rows and returns one result.
+
+2. It has 5 types of commands
+
+-  COUNT()
+- SUM()
+- AVG()
+- MAX()
+- MIN()
+
+#### COUNT()
+
+1. COUNT() tells us how many records/values exist.
+
+2. Example
+   ```
+   SELECT COUNT(*) FROM PROBLEM;  -- * - it count no.of rows
+
+   SELECT COUNT(SALARY) FROM PROBLEM;  -- salary - is a columns it count no.of columns
+
+   SELECT COUNT(*) AS TOTAL_EMPLOYEES FROM PROBLEM; -- total_employee - is a total 's title
+
+   ```
+
+#### SUM()
+
+1. SUM() calculates the total.
+
+2. Example
+   ```
+   SELECT SUM(SALARY) FROM PROBLEM;   -- IT ADD TOTAL NO.OF SALARY
+
+   SELECT SUM(SALARY) AS TOTAL_SALARY FROM problem;  -- total_salary is a total's title
+   ```
+
+#### AVG()
+
+1. AVG() calculates the average.
+
+2. Example
+   ```
+   SELECT AVG(SALARY) FROM problem;  -- it give average
+   ```
+
+#### MAX()
+
+1. MAX() is find maximum value.
+
+2. Example
+   ```
+   select MAX(SALARY) FROM PROBLEM; -- FIND MAXIMUM VALUE
+   ```
+
+#### MIN()
+
+1. MIN() is find minimum value.
+   ```
+   SELECT MIN(SALARY) FROM PROBLEM;
+   ```
+### GROUP BY
+
+1. GROUP BY is used to group rows that have the same value in a column.
+
+2. For example, our employee table
+
+| EMP_ID | NAME  | DEPT | SALARY |
+| -----: | ----- | ---- | -----: |
+|    101 | KRISH | IT   |  50000 |
+|    102 | ARUN  | IT   |  40000 |
+|    103 | KUMAR | HR   |  30000 |
+|    104 | RAJ   | HR   |  35000 |
+|    105 | VIJAY | IT   |  60000 |
+
+3. Here  IT → KRISH, ARUN, VIJAY
+              HR → KUMAR, RAJ
+        
+4. GROUP BY DEPT will create two groups:
+      IT group
+      HR group
+
+5. Syntax
+   ```
+   SELECT column_name, aggregate_function(column)
+   FROM table_name
+   GROUP BY column_name;
+   ```
+
+7. Example
+   ```
+   SELECT DEPT, COUNT(*) FROM PROBLEM 
+   GROUP BY DEPT;
+
+   SELECT DEPT, SUM(SALARY) AS TOTAL_SALARY FROM PROBLEM
+   GROUP BY DEPT;
+
+   SELECT DEPT, AVG(SALARY) AS AVERAGE FROM PROBLEM
+   GROUP BY DEPT;
+
+   SELECT DEPT, MAX(SALARY) AS MAXIMUM FROM PROBLEM
+   GROUP BY DEPT;
+
+   SELECT DEPT, MIN(SALARY) AS MINIMUM FROM PROBLEM
+   GROUP BY DEPT;
+   ```
+### HAVING
+
+1. HAVING is used to filter groups of data after using GROUP BY.
+
+2. Example
+   ```
+   SELECT DEPT, SUM(SALARY) AS TOTAL_SALARY FROM PROBLEM
+   GROUP BY DEPT
+   HAVING SUM(SALARY) > 100000;
+
+   SELECT DEPT, COUNT(*) AS TOTAL_SALARY FROM PROBLEM
+   GROUP BY DEPT
+   HAVING COUNT(*) > 2;
+
+   SELECT DEPT, MAX(SALARY) AS TOTAL_SALARY FROM PROBLEM
+   GROUP BY DEPT
+   HAVING MAX(SALARY) > 50000;
+
+   SELECT DEPT, AVG(SALARY) AS TOTAL_SALARY FROM PROBLEM
+   GROUP BY DEPT
+   HAVING AVG(SALARY) > 2000;
+
+   SELECT DEPT, MIN(SALARY) AS TOTAL_SALARY FROM PROBLEM
+   GROUP BY DEPT
+   HAVING MIN(SALARY) > 5000;
+
+
+   SELECT DEPARTMENT, SUM(SALARY) AS TOTAL_SALARY FROM PROBLEM
+   WHERE SALARY > 3500
+   GROUP BY DEPT
+   HAVING SUM(SALARY) > 7000;
+   ```
+### Join
+
+1. JOIN is used to combine data from two or more tables using a related column.
+
+2. Example we have two tables student and department.
+
+Student:
+        | STUDENT_ID | NAME  | DEPT_ID |
+        | ---------: | ----- | ------: |
+        |        101 | KRISH |       1 |
+        |        102 | ARUN  |       2 |
+        |        103 | KUMAR |       1 |
+        |        104 | RAJ   |       3 |
+
+Department:
+        | DEPT_ID | DEPT_NAME |
+        | ------: | --------- |
+        |       1 | CSE       |
+        |       2 | ECE       |
+        |       3 | IT        |
+
+3. Both tables have a common column:
+
+        STUDENT.DEPT_ID
+               ↓
+      DEPARTMENT.DEPT_ID
+
+4. So we can JOIN them.
+
+5. There are 6 types of join
+
+- Inner join
+- Left join
+- Right join
+- Full outer join
+- Cross join
+- Self join
+
+#### INNER JOIN
+
+1. INNER JOIN returns only the matching records from both tables.
+
+2. Example
+   ```
+   SELECT EMPLOYEE.EMP_ID,        -- INNER JOIN 
+		   EMPLOYEE.NAME,
+        DEPARTMENT.DEPT_NAME
+   FROM EMPLOYEE
+   INNER JOIN DEPARTMENT
+   ON EMPLOYEE.DEPT_ID = DEPARTMENT.DEPT_ID;
+   ```
+
+#### LEFT JOIN
+
+1. ALL records from the left table + matching records from the right table.
+
+2. Example
+   ```
+   SELECT EMPLOYEE.EMP_ID,          -- LEFT JOIN
+		EMPLOYEE.NAME,
+        DEPARTMENT.DEPT_NAME
+   FROM EMPLOYEE
+   LEFT JOIN DEPARTMENT
+   ON EMPLOYEE.DEPT_ID = DEPARTMENT.DEPT_ID;   
+   ```
+
+#### Right join
+
+1. ALL records from the right table + matching records from the left table.
+
+2. Example
+   ```
+   SELECT EMPLOYEE.EMP_ID,    -- right join
+		  EMPLOYEE.NAME,
+        DEPARTMENT.DEPT_NAME
+   FROM EMPLOYEE
+   RIGHT JOIN DEPARTMENT
+   ON EMPLOYEE.DEPT_ID = DEPARTMENT.DEPT_ID;   
+   ```
+
+#### CROSS JOIN
+
+1. It creates every possible combination of rows from both tables.
+
+2. Example
+   ```
+   SELECT EMPLOYEE.EMP_ID,   -- cross join
+		EMPLOYEE.NAME,
+      DEPARTMENT.DEPT_NAME
+   FROM EMPLOYEE 
+   CROSS JOIN DEPARTMENT;
+   ```
+
+#### SELF JOIN
+
+1. Self join means joining a table with itself.
+
+2. Syntax
+   ```
+   SELECT ...
+   FROM TABLE A
+   INNER JOIN TABLE B
+   ON A.column = B.column;
+   ```
+
+3. EXAMPLE
+   ```
+   SELECT EMPLOYEE.NAME AS EMPLOYEE,      -- self join with left join
+	   DEPARTMENT.DEPT_NAME AS DEPARTMENT
+   FROM EMPLOYEE
+   LEFT JOIN DEPARTMENT
+   ON EMPLOYEE.DEPT_INT = DEPARTMENT.DEPT_INT;
+   ```
+### WHERE CONDITION
+
+#### EQUAL (=)
+
+1. Condition match in equal
+
+2. Syntax
+   ```
+   SELECT * FROM STUDENT
+   WHERE AGE = 23;
+   ```
+
+#### GREATER THAN (>)
+
+1. Which condition is greater than a condition.
+
+2. Syntax
+   ```
+   SELECT * FROM UNIVERSITY  -- Greater
+   WHERE AGE > 22;
+   ```
+
+#### GREATER THAN OR EQUAL (>=)
+
+1. Which condition is greater than or equal to a condition.
+
+2. Syntax
+   ```
+   SELECT * FROM UNIVERSITY  -- Greater than or equal
+   WHERE AGE >= 22;
+   ```
+
+#### LESS THAN (<)
+
+1.  Which condition is Less than to a condition.
+
+2.  Syntax
+    ```
+    SELECT * FROM UNIVERSITY  -- Greater than or equal
+    WHERE AGE < 22;
+    ```
+
+#### LESS THAN OR EQUAL (<=)
+
+1.  Which condition is Less than or equal to a condition.
+
+2.  Syntax
+    ```
+    SELECT * FROM UNIVERSITY  -- Greater than or equal
+    WHERE AGE <= 22;
+    ```
+
+#### NOT EQUAL (<>) OR (!=)
+
+1.  Which condition is not equal to a condition.
+
+2.  Syntax
+    ```
+    SELECT * FROM UNIVERSITY  -- Not equal
+    WHERE AGE <> 22;
+    ```
+## DCL(DATA CONTROL LANGUAGE)
+
+1. DCL is used to control permissions/access to the database.
+
+2. There are mainly 2 DCL commands:
+
+- GRANT
+- REVOKE
+
+### Grant
+
+1. Grant is used to give previlage to a MySQL.
+
+2. The previlages are
+
+- Insert
+- Select 
+- Update
+- DELETE
+
+3. First of all we need to create database and table.
+
+4. And afterwards we need to create user to get previlage.
+   ```
+   CREATE USER 'EMPLOYEE1'@'localhost'   -- MAIN USER
+   IDENTIFIED BY 'EMPLOYEE@123';
+   ```
+5. And we can get grant by select.
+   ```
+   grant select ON OFFICE.EMPLOYEE to 'EMPLOYEE1'@'localhost';  -- GRANT 
+   ```
+6. And we can check the grant is working or not.
+   ```
+   SHOW GRANTS FOR 'EMPLOYEE1'@'localhost';   -- GRANT ACCEPTED OR NOT
+   ```
+7. And we can use insert by grant.
+   ```
+   GRANT INSERT ON OFFICE. EMPLOYEE TO 'EMPLOYEE1'@'localhost';  -- GRANT [INSERT]
+
+   USE OFFICE;        -- AFTER GRANT INSERT [WE CAN INSERT WHATEVER]
+
+   INSERT INTO EMPLOYEE VALUES(104, 'RUBAN', 80090);   -- INSERT
+   ```
+8. And we can use update by grant.
+   ```
+   GRANT UPDATE ON OFFICE.EMPLOYEE TO 'EMPLOYEE1'@'localhost';   -- GRANT UPDATE
+
+   use office;    -- AFTER GRANT UPDATE [WE CAN UPDATE]
+
+   update EMPLOYEE       -- UPDATE
+   set SALARY = 10000
+   WHERE EMP_ID = 103;
+   ```
+9. And we can use delete by grant.
+   ```
+   GRANT DELETE ON OFFICE.EMPLOYEE TO 'EMPLOYEE1'@'localhost';   -- GRANT DELETE
+
+   USE OFFICE;  -- AFTER FRANT DELETE[WE CAN DELETE]
+
+   DELETE FROM EMPLOYEE
+   WHERE EMP_ID = 104;
+   ```
+
+### REVOKE
+
+1. REVO means remove a permission that was previously given to a user.
+
+2. Revoke is used to remove the permission of select, insert, update and delete.
+
+- Insert
+   ```
+   REVOKE INSERT ON  OFFICE.EMPLOYEE FROM 'EMPLOYEE1'@'localhost'; -- REVOKE INSERT
+   ```
+- Update 
+   ```
+   REVOKE UPDATE ON  OFFICE.EMPLOYEE FROM 'EMPLOYEE1'@'localhost'; -- REVOKE UPDATE
+   ```
+- Delete
+   ```
+   REVOKE DELETE ON  OFFICE.EMPLOYEE FROM 'EMPLOYEE1'@'localhost'; -- REVOKE UPDATE
+   ```
+
+### GRANT VS REVOKE
+
+     GRANT            |       REVOKE
+---------------------------------------------
+Grant is for give     | Revoke is for remove the permission
+permission.           |
+                      |
+Grant - to            |   Revoke - from
+                      |
+We can give permission| We can remove permission from 
+to 'select,insert,    | 'select,insert, update and delete
+update and delete     |    
+                      |
+## TCL(Transaction Control Language)
+
+1. TCL commands are used to manage transactions in a database.
+
+### WHAT IS A TRANSCATION
+
+1. A transaction is a group of SQL operations treated as one unit.
+
+2. For example, suppose you transfer ₹1,000 from Account A to Account B:
+
+Account A → -₹1,000
+Account B → +₹1,000
+
+3. Bot9o`h operations should happen together.
+
+4. If something goes wrong, we can ROLLBACK the changes.
+
+5. If everything is correct, we COMMIT the changes
+
+### START TRANSCATION
+
+1. Before demonstrating TCL, we can explicitly start a transaction
+
+2. In program we can use start transcation; or begin;
+
+3. Example
+
+   ```
+   START TRANSACTION;
+
+   UPDATE STUDENT
+   SET AGE = 25
+   WHERE STUDENT_ID = 101;
+
+  select * from STUDENT;
+
+   ```
+
+### TYPES OF COMMANDS
+
+1. The main TCL commands in MySQL are:
+
+- COMMIT
+- ROLLBACK
+- SAVEPOINT
+
+#### COMMIT
+
+1. COMMIT permanently saves the changes made during the transaction.
+
+2. Example
+
+   ```
+   START TRANSACTION;
+
+   UPDATE STUDENT
+   SET AGE = 25
+   WHERE STUDENT_ID = 101;
+
+   COMMIT;
+
+   select * from STUDENT;
+   ```
+
+#### ROLLBACK
+
+1. ROLLBACK cancels changes made during the current transaction that have not been committed.
+
+2. After the commit command we can't use rollback.
+
+3. Example
+
+   ```
+   START TRANSACTION;
+
+   UPDATE STUDENT
+   SET AGE = 25
+   WHERE STUDENT_ID = 101;
+
+   ROLLBACK;
+
+   select * from STUDENT;
+   ```
+#### COMMIT VS ROLLBACK
+
+| COMMIT                                        | ROLLBACK                            |
+| --------------------------------------------- | ----------------------------------- |
+| Saves changes                                 | Cancels uncommitted changes         |
+| Changes become permanent                      | Changes are undone                  |
+| Cannot normally undo using ROLLBACK afterward | Returns to previous committed state |
+
+#### SAVEPOINT
+
+1. SAVEPOINT creates a checkpoint inside a transaction.
+
+2. After savepoint we can use rollback.
+
+2. Think of it like a game checkpoint 🎮.
+
+3. START TRANSACTION
+       ↓
+    UPDATE 1
+       ↓
+   SAVEPOINT S1
+       ↓
+    UPDATE 2
+       ↓
+   SAVEPOINT S2
+       ↓
+    UPDATE 3
+
+4. You can return to S1 or S2.
+
+5. Example
+   ```
+   START TRANSACTION;
+
+   UPDATE ACCOUNT
+   SET BALANCE = BALANCE - 500
+   WHERE ACCOUNT_ID = 101;
+
+   SAVEPOINT S1;
+
+   UPDATE ACCOUNT
+   SET BALANCE = BALANCE + 500
+   WHERE ACCOUNT_ID = 102;
+
+   SAVEPOINT S2;
+
+   ```
+#### Release savepoint
+
+1. Release savepoint means delete the checkpoint
+
+2. Example
+   ```
+   RELEASE SAVEPOINT S1;
+   ```
+#### ROLLBACk TO SAVEPOINT
+
+1. Rollback to savepoint means after create a s2 we can go and make change in s1.
+
+2. Example 
+   ```
+   UPDATE sbi
+   SET BALANCE = BALANCE - 5
+   WHERE ACCOUNT_ID = 101;
+
+   SELECT * FROM sbi;
+
+   SAVEPOINT S1;   --[ save s1]
+
+   UPDATE sbi
+   SET BALANCE = BALANCE + 5
+   WHERE ACCOUNT_ID = 102;
+
+   SELECT * FROM sbi;
+
+   Rollback to savepoint S1; -- [after savepoint s1 it unsave s1]
+
+   savepoint s2;  -- [save s2]
+
+   ```
+3. In this important one "before savepoint s2 if you want any changes in s1 use that before savepoint s2". 
 
 # Functions
 
@@ -646,15 +1448,13 @@ course_id     student_id    course
 
 3. In numbers we can count numbers of persons in the table data, sum of salary of persons in the table data, maximum salary of the salary in the table data and minimum salary in the table data.
 
-- Query for numbers of persons in the table data: SELECT COUNT(*) Total FROM company;
+- Query for numbers of persons in the table data: SELECT COUNT(\*) Total FROM company;
 
-- Query for numbers of specific person in the table data: SELECT COUNT(*) Total_no_of_sales FROM company
-                                                          WHERE job_desc="sales";
-                        
+- Query for numbers of specific person in the table data: SELECT COUNT(\*) Total_no_of_sales FROM company
+  WHERE job_desc="sales";
 - Query for sum of salary: SELECT SUM(salary) Total_of_salary FROM company;
-                        
 - Query for specific person sum of salary: SELECT SUM(salary) Total_of_salary FROM company
-                                           WHERE job_desc="manager";
+  WHERE job_desc="manager";
 
 - Query for maximum salary who get:SELECT MAX(salary) max_salary FROM company;
 
@@ -666,91 +1466,76 @@ course_id     student_id    course
 
 - Query for measure character length for specific data: SELECT stfname,CHAR_LENGTH(stfname) char_count FROM company;
 
-- Query for rupees,euro like money name and round the salary in decimals: SELECT stfname,CONCAT('RS.',FORMAT(salary,0))salary FROM    company;
+- Query for rupees,euro like money name and round the salary in decimals: SELECT stfname,CONCAT('RS.',FORMAT(salary,0))salary FROM company;
 
 - Query for print specific numbers of characters in the table data: SELECT stfname,LEFT(job_desc,3) job_desc FROM company;
 
- 5. If you want learn more about the functions search in "Tech on the net". 
+5.  If you want learn more about the functions search in "Tech on the net".
 
- # DATE 
+# DATE
 
- 1. DATE function is used to give date, time, month and year to add data in the table.
+1.  DATE function is used to give date, time, month and year to add data in the table.
 
- 2. We can give date for the specific person, we can give current data, time, month and year, we can formate the date, we can see difference current date to past date or current date to future date, we can see tommorow date, month, time and year.
+2.  We can give date for the specific person, we can give current data, time, month and year, we can formate the date, we can see difference current date to past date or current date to future date, we can see tommorow date, month, time and year.
 
- - Querys for current time: SELECT NOW();, SELECT DATE(NOW());, SELECT CURDATE();.
+- Querys for current time: SELECT NOW();, SELECT DATE(NOW());, SELECT CURDATE();.
 
- - Query for date for the specific person: ALTER TABLE company ADD Hire_date DATE
-                                           UPDATE company
-                                           SET Hire_date= "2012-06-29"
-                                           WHERE job_desc= "manager";
+- Query for date for the specific person: ALTER TABLE company ADD Hire_date DATE
+  UPDATE company
+  SET Hire_date= "2012-06-29"
+  WHERE job_desc= "manager";
 
- - Query for formate the date: SELECT DATE_FORMAT(CURDATE(), "%d/%m/%y")DATE;
+- Query for formate the date: SELECT DATE_FORMAT(CURDATE(), "%d/%m/%y")DATE;
 
- - Query for difference current date to past date or current date to future date: SELECT DATEDIFF(CURDATE(),"2024/04/15") DAYS;   
+- Query for difference current date to past date or current date to future date: SELECT DATEDIFF(CURDATE(),"2024/04/15") DAYS;
 
- - Query for tommorow date, month and year: SELECT DATE_ADD(CURDATE(), INTERVAL 1 DAY) After_one_day;  
+- Query for tommorow date, month and year: SELECT DATE_ADD(CURDATE(), INTERVAL 1 DAY) After_one_day;
 
- # ORDER BY
+# HAVING
 
- 1. The GROUP BY statement in SQL is used to organize data into groups based on one or more columns.
-
- 2. It is commonly paired with aggregate functions (e.g., COUNT, SUM, AVG, MAX, MIN) to perform operations on each group of data.
-
- - Query for average the table data: SELECT job_desc,AVG(salary) FROM company
-                                     GROUP BY job_desc;
- 
- - Query for count the table data: SELECT job_desc,COUNT(stf_id) FROM company
-                                   GROUP BY job_desc;
-
-# HAVING 
-
-1. The HAVING clause in SQL is used to filter groups of data after applying the GROUP BY clause. 
+1. The HAVING clause in SQL is used to filter groups of data after applying the GROUP BY clause.
 
 2. Unlike the WHERE clause, which filters rows before grouping, HAVING is applied to aggregate functions (e.g., SUM, COUNT, AVG) and works with grouped data.
 
 - Query for having, group by using count: SELECT job_desc,COUNT(stf_id) FROM company
-                                          GROUP BY job_desc
-                                          HAVING COUNT(stf_id) >1; 
+  GROUP BY job_desc
+  HAVING COUNT(stf_id) >1;
 
 - Query for having, group by using count after having using order by: SELECT job_desc,COUNT(stf_id) FROM company
-                                                                      GROUP BY job_desc
-                                                                      HAVING COUNT(stf_id) >1
-                                                                      ORDER BY job_desc;
-                                                                      
-
+  GROUP BY job_desc
+  HAVING COUNT(stf_id) >1
+  ORDER BY job_desc;
 
 # CONSTRAINTS
 
 1. In constraints there are some keywords like primary key the some constraints are AUTO_INCREMENT, NOT NULL, DEFAULT, UNIQUE etc..
 
 - Query for constraints - CREATE TABLE IF NOT EXISTS factory(
-                          stf_id INT PRIMARY KEY AUTO_INCREMENT,
-                          stfname VARCHAR(30) NOT NULL,
-                          job_desc VARCHAR(30) DEFAULT 'unasssigned',
-                          salary INT,
-                          pan VARCHAR(20) UNIQUE,
-                          CHECK (salary>50000)  
-                          );
+  stf_id INT PRIMARY KEY AUTO_INCREMENT,
+  stfname VARCHAR(30) NOT NULL,
+  job_desc VARCHAR(30) DEFAULT 'unasssigned',
+  salary INT,
+  pan VARCHAR(20) UNIQUE,
+  CHECK (salary>50000)
+  );
 
 # FOREIGN KEY
 
 1. Foreign key used to connect the different tables.
 
 - Query for Foreign key - CREATE TABLE IF NOT EXISTS branch(
-                          brch_id INT PRIMARY KEY AUTO_INCREMENT,
-                          brchname VARCHAR(30) NOT NULL,
-                          addr VARCHAR(300)); 
+  brch_id INT PRIMARY KEY AUTO_INCREMENT,
+  brchname VARCHAR(30) NOT NULL,
+  addr VARCHAR(300));
 
-
-                          CREATE TABLE IF NOT EXISTS factory(
-                          stf_id INT PRIMARY KEY AUTO_INCREMENT,
-                          stfname VARCHAR(30) NOT NULL,
-                          job_desc VARCHAR(30),
-                          salary INT,
-                          brch_id INT,
-                          CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
-                          ); 
+                         CREATE TABLE IF NOT EXISTS factory(
+                         stf_id INT PRIMARY KEY AUTO_INCREMENT,
+                         stfname VARCHAR(30) NOT NULL,
+                         job_desc VARCHAR(30),
+                         salary INT,
+                         brch_id INT,
+                         CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
+                         );
 
 # INDEX
 
@@ -764,23 +1549,23 @@ course_id     student_id    course
 
 5. And then we can use finally full text index it make we can search a keywords it make the result so faster.
 
-- Query for index - CREATE TABLE  IF NOT EXISTS employee(
-                    stf_id INT PRIMARY KEY AUTO_INCREMENT,
-                    stfname VARCHAR(30) NOT NULL,
-                    job_desc VARCHAR(30),
-                    salary INT,
-                    pan VARCHAR(20) UNIQUE
-                    );
+- Query for index - CREATE TABLE IF NOT EXISTS employee(
+  stf_id INT PRIMARY KEY AUTO_INCREMENT,
+  stfname VARCHAR(30) NOT NULL,
+  job_desc VARCHAR(30),
+  salary INT,
+  pan VARCHAR(20) UNIQUE
+  );
 
-                    SHOW INDEX FROM employee;
+                   SHOW INDEX FROM employee;
 
-                    CREATE INDEX name_index ON employee(stfname);
+                   CREATE INDEX name_index ON employee(stfname);
 
-                    ALTER TABLE employee
-                    DROP INDEX name_index;
+                   ALTER TABLE employee
+                   DROP INDEX name_index;
 
-                    ALTER TABLE employee
-                    ADD INDEX (stfname);
+                   ALTER TABLE employee
+                   ADD INDEX (stfname);
 
 # ON DELETE
 
@@ -788,146 +1573,146 @@ course_id     student_id    course
 
 2. Cascade is used to delete complete data in the both table what we mention on the delete.
 
-- Query for the cascade:    CREATE TABLE IF NOT EXISTS branch(
-                            brch_id INT PRIMARY KEY AUTO_INCREMENT,
-                            brchname VARCHAR(30) NOT NULL,
-                            addr VARCHAR(300)); 
+- Query for the cascade: CREATE TABLE IF NOT EXISTS branch(
+  brch_id INT PRIMARY KEY AUTO_INCREMENT,
+  brchname VARCHAR(30) NOT NULL,
+  addr VARCHAR(300));
 
-                            CREATE TABLE IF NOT EXISTS factory(
-                            stf_id INT PRIMARY KEY AUTO_INCREMENT,
-                            stfname VARCHAR(30) NOT NULL,
-                            job_desc VARCHAR(30),
-                            salary INT,
-                            brch_id INT,
-                            CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
-                            ON DELETE CASCADE -- CASCADE OR SET NULL
-                            ); 
+                           CREATE TABLE IF NOT EXISTS factory(
+                           stf_id INT PRIMARY KEY AUTO_INCREMENT,
+                           stfname VARCHAR(30) NOT NULL,
+                           job_desc VARCHAR(30),
+                           salary INT,
+                           brch_id INT,
+                           CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
+                           ON DELETE CASCADE -- CASCADE OR SET NULL
+                           );
 
-                            INSERT INTO branch VALUES(1,"Chennai","16 ABC Road");
-                            INSERT INTO branch VALUES(2,"Coimbatore","120 15th Block");
-                            INSERT INTO branch VALUES(3,"Mumbai","25 XYZ Road");
-                            INSERT INTO branch VALUES(4,"Hydrabad","32 10th Street");
+                           INSERT INTO branch VALUES(1,"Chennai","16 ABC Road");
+                           INSERT INTO branch VALUES(2,"Coimbatore","120 15th Block");
+                           INSERT INTO branch VALUES(3,"Mumbai","25 XYZ Road");
+                           INSERT INTO branch VALUES(4,"Hydrabad","32 10th Street");
 
-                            INSERT INTO factory VALUES(1,'Ram','ADMIN',1000000,2);
-                            INSERT INTO factory VALUES(2,'Harini','MANAGER',2500000,2);
-                            INSERT INTO factory VALUES(3,'George','SALES',2000000,1);
-                            INSERT INTO factory VALUES(4,'Ramya','SALES',1300000,2);
-                            INSERT INTO factory VALUES(5,'Meena','HR',2000000,3);
-                            INSERT INTO factory VALUES(6,'Ashok','MANAGER',3000000,1);
-                            INSERT INTO factory VALUES(7,'Abdul','HR',2000000,1);
-                            INSERT INTO factory VALUES(8,'Ramya','ENGINEER',1000000,2);
-                            INSERT INTO factory VALUES(9,'Raghu','CEO',8000000,3);
-                            INSERT INTO factory VALUES(10,'Arvind','MANAGER',2800000,3);
-                            INSERT INTO factory VALUES(11,'Akshay','ENGINEER',1000000,1);
-                            INSERT INTO factory VALUES(12,'John','ADMIN',2200000,1);
-                            INSERT INTO factory VALUES(13,'Abinaya','ENGINEER',2100000,2);
-                            INSERT INTO factory VALUES(14,'Vidya','ADMIN',2200000,NULL);
-                            INSERT INTO factory VALUES(15,'Ranjani','ENGINEER',2100000,NULL);
+                           INSERT INTO factory VALUES(1,'Ram','ADMIN',1000000,2);
+                           INSERT INTO factory VALUES(2,'Harini','MANAGER',2500000,2);
+                           INSERT INTO factory VALUES(3,'George','SALES',2000000,1);
+                           INSERT INTO factory VALUES(4,'Ramya','SALES',1300000,2);
+                           INSERT INTO factory VALUES(5,'Meena','HR',2000000,3);
+                           INSERT INTO factory VALUES(6,'Ashok','MANAGER',3000000,1);
+                           INSERT INTO factory VALUES(7,'Abdul','HR',2000000,1);
+                           INSERT INTO factory VALUES(8,'Ramya','ENGINEER',1000000,2);
+                           INSERT INTO factory VALUES(9,'Raghu','CEO',8000000,3);
+                           INSERT INTO factory VALUES(10,'Arvind','MANAGER',2800000,3);
+                           INSERT INTO factory VALUES(11,'Akshay','ENGINEER',1000000,1);
+                           INSERT INTO factory VALUES(12,'John','ADMIN',2200000,1);
+                           INSERT INTO factory VALUES(13,'Abinaya','ENGINEER',2100000,2);
+                           INSERT INTO factory VALUES(14,'Vidya','ADMIN',2200000,NULL);
+                           INSERT INTO factory VALUES(15,'Ranjani','ENGINEER',2100000,NULL);
 
-                            SELECT * FROM factory;
-                            SELECT * FROM branch;
+                           SELECT * FROM factory;
+                           SELECT * FROM branch;
 
-                            DELETE FROM branch
-                            WHERE brch_id = 2;
+                           DELETE FROM branch
+                           WHERE brch_id = 2;
 
 3. After the cascade if you want to use the set null drop the full table set.
 
 4. In set null that is used to particular value in the table.
 
-- Query for the set null:   CREATE TABLE IF NOT EXISTS branch(
-                            brch_id INT PRIMARY KEY AUTO_INCREMENT,
-                            brchname VARCHAR(30) NOT NULL,
-                            addr VARCHAR(300)); 
+- Query for the set null: CREATE TABLE IF NOT EXISTS branch(
+  brch_id INT PRIMARY KEY AUTO_INCREMENT,
+  brchname VARCHAR(30) NOT NULL,
+  addr VARCHAR(300));
 
-                            CREATE TABLE IF NOT EXISTS factory(
-                            stf_id INT PRIMARY KEY AUTO_INCREMENT,
-                            stfname VARCHAR(30) NOT NULL,
-                            job_desc VARCHAR(30),
-                            salary INT,
-                            brch_id INT,
-                            CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
-                            ON DELETE CASCADE -- CASCADE OR SET NULL
-                            ); 
+                           CREATE TABLE IF NOT EXISTS factory(
+                           stf_id INT PRIMARY KEY AUTO_INCREMENT,
+                           stfname VARCHAR(30) NOT NULL,
+                           job_desc VARCHAR(30),
+                           salary INT,
+                           brch_id INT,
+                           CONSTRAINT fk_brchid FOREIGN KEY (brch_id) REFERENCES branch(brch_id)
+                           ON DELETE CASCADE -- CASCADE OR SET NULL
+                           );
 
-                            INSERT INTO branch VALUES(1,"Chennai","16 ABC Road");
-                            INSERT INTO branch VALUES(2,"Coimbatore","120 15th Block");
-                            INSERT INTO branch VALUES(3,"Mumbai","25 XYZ Road");
-                            INSERT INTO branch VALUES(4,"Hydrabad","32 10th Street");
+                           INSERT INTO branch VALUES(1,"Chennai","16 ABC Road");
+                           INSERT INTO branch VALUES(2,"Coimbatore","120 15th Block");
+                           INSERT INTO branch VALUES(3,"Mumbai","25 XYZ Road");
+                           INSERT INTO branch VALUES(4,"Hydrabad","32 10th Street");
 
-                            INSERT INTO factory VALUES(1,'Ram','ADMIN',1000000,2);
-                            INSERT INTO factory VALUES(2,'Harini','MANAGER',2500000,2);
-                            INSERT INTO factory VALUES(3,'George','SALES',2000000,1);
-                            INSERT INTO factory VALUES(4,'Ramya','SALES',1300000,2);
-                            INSERT INTO factory VALUES(5,'Meena','HR',2000000,3);
-                            INSERT INTO factory VALUES(6,'Ashok','MANAGER',3000000,1);
-                            INSERT INTO factory VALUES(7,'Abdul','HR',2000000,1);
-                            INSERT INTO factory VALUES(8,'Ramya','ENGINEER',1000000,2);
-                            INSERT INTO factory VALUES(9,'Raghu','CEO',8000000,3);
-                            INSERT INTO factory VALUES(10,'Arvind','MANAGER',2800000,3);
-                            INSERT INTO factory VALUES(11,'Akshay','ENGINEER',1000000,1);
-                            INSERT INTO factory VALUES(12,'John','ADMIN',2200000,1);
-                            INSERT INTO factory VALUES(13,'Abinaya','ENGINEER',2100000,2);
-                            INSERT INTO factory VALUES(14,'Vidya','ADMIN',2200000,NULL);
-                            INSERT INTO factory VALUES(15,'Ranjani','ENGINEER',2100000,NULL);
+                           INSERT INTO factory VALUES(1,'Ram','ADMIN',1000000,2);
+                           INSERT INTO factory VALUES(2,'Harini','MANAGER',2500000,2);
+                           INSERT INTO factory VALUES(3,'George','SALES',2000000,1);
+                           INSERT INTO factory VALUES(4,'Ramya','SALES',1300000,2);
+                           INSERT INTO factory VALUES(5,'Meena','HR',2000000,3);
+                           INSERT INTO factory VALUES(6,'Ashok','MANAGER',3000000,1);
+                           INSERT INTO factory VALUES(7,'Abdul','HR',2000000,1);
+                           INSERT INTO factory VALUES(8,'Ramya','ENGINEER',1000000,2);
+                           INSERT INTO factory VALUES(9,'Raghu','CEO',8000000,3);
+                           INSERT INTO factory VALUES(10,'Arvind','MANAGER',2800000,3);
+                           INSERT INTO factory VALUES(11,'Akshay','ENGINEER',1000000,1);
+                           INSERT INTO factory VALUES(12,'John','ADMIN',2200000,1);
+                           INSERT INTO factory VALUES(13,'Abinaya','ENGINEER',2100000,2);
+                           INSERT INTO factory VALUES(14,'Vidya','ADMIN',2200000,NULL);
+                           INSERT INTO factory VALUES(15,'Ranjani','ENGINEER',2100000,NULL);
 
-                            SELECT * FROM factory;
-                            SELECT * FROM branch;
+                           SELECT * FROM factory;
+                           SELECT * FROM branch;
 
-                            DELETE FROM branch
-                            WHERE brch_id = 2;
+                           DELETE FROM branch
+                           WHERE brch_id = 2;
 
- # JOIN
+# JOIN
 
- 1. A JOIN clause is used to combine rows from two or more tables, based on a related column between them.  
+1.  A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
 
- 2. Here are the different types of the JOINs in SQL:
+2.  Here are the different types of the JOINs in SQL:
 
- - INNER JOIN or JOIN
+- INNER JOIN or JOIN
 
- - LEFT JOIN
+- LEFT JOIN
 
- - RIGHT JOIN
+- RIGHT JOIN
 
- - FULL JOIN
+- FULL JOIN
 
- - CROSS JOIN
+- CROSS JOIN
 
 ## INNER JOIN or JOIN
 
 - INNER JOIN or JOIN returns records that have matching values in both tables.
 
 - Query for inner join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
-                        FROM factory
-                        INNER JOIN branch
-                        ON factory.brch_id = branch.brch_id
-                        ORDER BY factory.stf_id;
+  FROM factory
+  INNER JOIN branch
+  ON factory.brch_id = branch.brch_id
+  ORDER BY factory.stf_id;
 
 - We can write inner join code without using inner join by WHERE.
 
 - Query for inner join without using inner join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
-                                                 FROM factory,branch
-                                                 WHERE factory.brch_id = branch.brch_id
-                                                 ORDER BY factory.stf_id;
+  FROM factory,branch
+  WHERE factory.brch_id = branch.brch_id
+  ORDER BY factory.stf_id;
 
 ## LEFT JOIN
 
 - LEFT JOIN returns all records from the left table, and the matched records from the right table.
 
 - Query for left join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
-                       FROM factory
-                       LEFT JOIN branch
-                       ON factory.brch_id = branch.brch_id
-                       ORDER BY factory.stf_id;
+  FROM factory
+  LEFT JOIN branch
+  ON factory.brch_id = branch.brch_id
+  ORDER BY factory.stf_id;
 
 ## RIGHT JOIN
 
 - RIGHT JOIN returns all records from the right table, and the matched records from the left table.
 
 - Query for left join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
-                       FROM factory
-                       RIGHT JOIN branch
-                       ON factory.brch_id = branch.brch_id
-                       ORDER BY factory.stf_id;
+  FROM factory
+  RIGHT JOIN branch
+  ON factory.brch_id = branch.brch_id
+  ORDER BY factory.stf_id;
 
 ## FULL JOIN
 
@@ -940,9 +1725,9 @@ course_id     student_id    course
 - In CROSS JOIN if there is two table is 1st table is value will join second table all value.
 
 - Query for cross join: SELECT factory.stf_id,factory.stfname,factory.job_desc,branch.brchname
-                        FROM factory
-                        CROSS JOIN branch
-                        ORDER BY factory.stf_id; 
+  FROM factory
+  CROSS JOIN branch
+  ORDER BY factory.stf_id;
 
 # UNION
 
@@ -954,44 +1739,14 @@ course_id     student_id    course
 
 - The columns in every SELECT statement must also be in the same order
 
-- Query for union without duplicate value: SELECT * FROM branch
-                                           UNION 
-                                           SELECT * FROM clients;
+- Query for union without duplicate value: SELECT _ FROM branch
+  UNION
+  SELECT _ FROM clients;
 
-- Query for union with duplicate values: SELECT * FROM branch
-                                         UNION ALL
-                                         SELECT * FROM clients;                                           
- 
+- Query for union with duplicate values: SELECT _ FROM branch
+  UNION ALL
+  SELECT _ FROM clients;
 
+```
 
-
-
-
-
-
-                                                                                                                         
-                                                                       
-
-
-                                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
